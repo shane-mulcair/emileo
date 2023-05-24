@@ -1,3 +1,5 @@
 FROM {{ docker_image }}
 
-RUN {{ package_command }}
+{{ package_command }}
+
+{{ pip_command }}
