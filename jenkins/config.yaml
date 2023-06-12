@@ -1,0 +1,11 @@
+jenkins:
+  systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code plugin\n\n"
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+        - usernamePassword:
+                scope: GLOBALS
+                id: github_read
+                username: shane-mulcair
+                password: ""

@@ -1,0 +1,10 @@
+custom-tools-plugin
+dependency-check-jenkins-plugin
+docker-workflow
+git
+greenballs
+junit
+plain-credentials
+rebuild
+github-oauth
+configuration-as-code

@@ -71,6 +71,11 @@ if __name__ == "__main__":
         epilog="Creator: Shane Mulcair",
     )
     parser.add_argument("--container", help="The container to scan")
+    parser.add_argument("--scan_only", help="Only scan for issues, don't try to fix")
+    parser.add_argument("--show_not_fixable", help="List the packages that don't have a fix available")
+    parser.add_argument("--os_updates", help="Figure out the package manager and apply OS upates")
+    parser.add_argument("--pip_updates", help="Update any needed pip packages, if found")
+    parser.add_argument("--npm_updates", help="See if npm is installed and do a global package update")
     args = parser.parse_args()
     container_name = args.container
 
