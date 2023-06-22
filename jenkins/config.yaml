@@ -5,7 +5,7 @@ credentials:
     domainCredentials:
       - credentials:
         - usernamePassword:
-                scope: GLOBALS
+                scope: GLOBAL
                 id: github_read
                 username: shane-mulcair
                 password: ""

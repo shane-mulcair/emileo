@@ -1,4 +1,4 @@
-FROM cytopia/dvwa:latest
+FROM centos:7
 
-RUN apt-get update && apt-get upgrade -y && apt-get clean all
+RUN yum update -y && yum clean all
 

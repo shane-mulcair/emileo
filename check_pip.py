@@ -1,4 +1,5 @@
 import docker
+import logging
 
 pip_update_command = "pip3 install --upgrade "
 
@@ -17,7 +18,7 @@ def check_pip_packages(docker_image):
         return package_list
             
     except:
-        print("Pip doesn't seem to be installed")
+        logging.error("Pip doesn't seem to be installed")
         return []
     
 def update_pip_packages(docker_image, package_list):
@@ -26,7 +27,7 @@ def update_pip_packages(docker_image, package_list):
     for package in package_list:
         if package not in allowlist:
             update_command = update_command + package + " "
-    print(update_command)
+    logging.info(update_command)
     if update_command != pip_update_command:
         return update_command
     else:

@@ -1,4 +1,5 @@
 import docker
+import logging
 
 npm_update_command = "npm update -g"
 
@@ -11,5 +12,5 @@ def check_npm(docker_image):
         return npm_update_command
                     
     except:
-        print("NPM doesn't seem to be installed")
+        logging.error("NPM doesn't seem to be installed")
         return ""
