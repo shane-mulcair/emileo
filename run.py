@@ -45,10 +45,10 @@ if __name__ == "__main__":
     parser.add_argument("--container", required=True, help="The container to scan")
     parser.add_argument("--scan_only", help="Only scan for issues, don't try to fix")
     parser.add_argument("--show_not_fixable", help="List the packages that don't have a fix available")
-    parser.add_argument("--os_updates", help="Figure out the package manager and apply OS upates")
-    parser.add_argument("--pip_updates", help="Update any needed pip packages, if found")
-    parser.add_argument("--npm_updates", help="See if npm is installed and do a global package update")
-    parser.add_argument("--defect-dojo", help="Upload all results to defect Dojo")
+    parser.add_argument("--os_updates", action='store_true', default=True, help="Figure out the package manager and apply OS upates")
+    parser.add_argument("--pip_updates", action='store_true', default=False, help="Update any needed pip packages, if found")
+    parser.add_argument("--npm_updates", action='store_true', default=False, help="See if npm is installed and do a global package update")
+    parser.add_argument("--defect_dojo", action='store_true', default=False, help="Upload all results to defect Dojo")
     args = parser.parse_args()
     container_name = args.container
 
@@ -58,30 +58,33 @@ if __name__ == "__main__":
         logging.info("Only scanning, exiting.")
         exit(0)
     package_cmd = ""
-    if num_fixable_vulns > 0:
-        logging.info("There are fixable vulnerabilities - discovering the package manager now")
-        package_cmd = discover_os.discover_os(container_name)
-        docker_worker.create_package_dockerfile(container_name, package_cmd)
-        logging.info("Rebuilding the container with package manager updates")
-        docker_worker.rebuild_container(container_name)
+    if args.os_updates:
+        if num_fixable_vulns > 0:
+            logging.info("There are fixable vulnerabilities - discovering the package manager now")
+            package_cmd = discover_os.discover_os(container_name)
+            docker_worker.create_package_dockerfile(container_name, package_cmd)
+            logging.info("Rebuilding the container with package manager updates")
+            docker_worker.rebuild_container(container_name)
 
-        scan_with_grype(container_name + "_updated")
+            scan_with_grype(container_name + "_updated", args.show_not_fixable, args.defect_dojo)
 
     container_name = container_name + "_updated"
-    logging.info("Checking if pip is installed for python packages")
-    pip_vulns = check_pip.check_pip_packages(container_name)
-    pip_update_command = ""
-    if len(pip_vulns) > 0:
-        pip_update_command = check_pip.update_pip_packages(container_name, pip_vulns)
-        if pip_update_command != "":
-            docker_worker.create_pip_dockerfile(container_name, package_cmd, pip_update_command)
-            logging.info("Rebuilding the container with pip updates")
-            docker_worker.rebuild_container(container_name)
-            scan_with_grype(container_name)
+    if args.pip_updates:
+        logging.info("Checking if pip is installed for python packages")
+        pip_vulns = check_pip.check_pip_packages(container_name)
+        pip_update_command = ""
+        if len(pip_vulns) > 0:
+            pip_update_command = check_pip.update_pip_packages(container_name, pip_vulns)
+            if pip_update_command != "":
+                docker_worker.create_pip_dockerfile(container_name, package_cmd, pip_update_command)
+                logging.info("Rebuilding the container with pip updates")
+                docker_worker.rebuild_container(container_name)
+                scan_with_grype(container_name, args.show_not_fixable, args.defect_dojo)
 
-    npm_update_command = check_npm.check_npm(container_name)
-    if npm_update_command != "":
-        docker_worker.create_npm_dockerfile(container_name, package_cmd, pip_update_command, npm_update_command)
-        logging.info("Rebuilding the container with npm updates")
-        docker_worker.rebuild_container(container_name)
-        scan_with_grype(container_name)
+    if args.npm_updates:
+        npm_update_command = check_npm.check_npm(container_name)
+        if npm_update_command != "":
+            docker_worker.create_npm_dockerfile(container_name, package_cmd, pip_update_command, npm_update_command)
+            logging.info("Rebuilding the container with npm updates")
+            docker_worker.rebuild_container(container_name)
+            scan_with_grype(container_name, args.show_not_fixable, args.defect_dojo)
