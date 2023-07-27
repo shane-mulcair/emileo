@@ -13,8 +13,11 @@ def discover_os(docker_image):
     client=docker.from_env()
     for cmd in commands:
         try:
-            client.containers.run(docker_image, "cat " + cmd)
+            result = client.containers.run(docker_image, "cat " + cmd)
+            if cmd == "/etc/redhat-release":
+                if "release 8" in str(result):
+                    return "dnf update -y && dnf clean all"
             return commands[cmd]
         except docker.errors.ContainerError as e:
             continue
-    return "No idea"
+    return "No match found"
