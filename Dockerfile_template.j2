@@ -1,5 +1,7 @@
 FROM {{ docker_image }}
 
+USER root
+
 {{ package_command }}
 
 {{ pip_command }}

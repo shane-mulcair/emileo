@@ -28,7 +28,7 @@ def upload_report(product_name, report):
         "-H", 'Authorization: Token 5c3f5c0b517a7847f57ae03ca50f8dcfedfce3cd',
         "-H", 'X-CSRFTOKEN: UjuCuq4MLJVrRJY3BQ64hlC0CABBSAixFXpLwxTMN5h4BlS0lzRjvCcdkir7S9yj',
         "-F", 'active=true', "-F", 'verified=true', "-F", 'close_old_findings=true',
-        "-F", 'engagement_name=' + product_name, "-F", 'deduplication_on_engagement=true',
+        "-F", 'engagement_name=' + product_name + '_August', "-F", 'deduplication_on_engagement=true',
         "-F", 'minimum_severity=Info', "-F", 'create_finding_groups_for_all_findings=true',
         "-F", 'product_name=' + product_name, "-F", 'file=@result.json;type=application/json',
         "-F", 'auto_create_context=true', "-F", 'scan_type=Anchore Grype'], stdout=subprocess.PIPE)

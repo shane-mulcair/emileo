@@ -1,6 +1,7 @@
 import docker
 
-commands = {"/etc/redhat-release": "yum update -y && yum clean all",
+commands = {"/etc/oracle-release": "microdnf update -y",
+            "/etc/redhat-release": "yum update -y && yum clean all",
             "/etc/arch-release": "pacman -Syu",
             "/etc/gentoo-release": "emaint -a sync && emerge -uDN @world",
             "/etc/SuSE-release": "zypper up --non-interactive",

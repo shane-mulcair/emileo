@@ -74,7 +74,7 @@ if __name__ == "__main__":
         pip_vulns = check_pip.check_pip_packages(container_name)
         pip_update_command = ""
         if len(pip_vulns) > 0:
-            pip_update_command = check_pip.update_pip_packages(container_name, pip_vulns)
+            pip_update_command = check_pip.update_pip_packages(pip_vulns)
             if pip_update_command != "":
                 docker_worker.create_pip_dockerfile(container_name, package_cmd, pip_update_command)
                 logging.info("Rebuilding the container with pip updates")

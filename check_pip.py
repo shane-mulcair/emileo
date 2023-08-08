@@ -3,8 +3,8 @@ import logging
 
 pip_update_command = "pip3 install --upgrade "
 
-def read_allowlist():
-    with open('pip_allowlist.txt', 'r') as f:
+def read_blocklist():
+    with open('pip_blocklist.txt', 'r') as f:
         return f.read().splitlines()
     
 def check_pip_packages(docker_image):
@@ -21,8 +21,8 @@ def check_pip_packages(docker_image):
         logging.error("Pip doesn't seem to be installed")
         return []
     
-def update_pip_packages(docker_image, package_list):
-    allowlist = read_allowlist()
+def update_pip_packages(package_list):
+    allowlist = read_blocklist()
     update_command = pip_update_command
     for package in package_list:
         if package not in allowlist:

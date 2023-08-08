@@ -1,0 +1,1683 @@
+{
+ "matches": [],
+ "ignoredMatches": [
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d3b0c2044ba4c040",
+    "name": "libc-bin",
+    "version": "2.35-0ubuntu3.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc-bin/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libc-bin.conffiles",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libc-bin.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc-bin:libc-bin:2.35-0ubuntu3.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc-bin:libc_bin:2.35-0ubuntu3.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc-bin:2.35-0ubuntu3.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc_bin:libc_bin:2.35-0ubuntu3.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc-bin:2.35-0ubuntu3.1:*:*:*:*:*:*:*",
+     "cpe:2.3:a:libc:libc_bin:2.35-0ubuntu3.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc-bin@2.35-0ubuntu3.1?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-20013",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-20013"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-20013",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-20013",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://akkadia.org/drepper/SHA-crypt.txt",
+      "https://pthree.org/2018/05/23/do-not-use-sha256crypt-sha512crypt-theyre-dangerous/",
+      "https://twitter.com/solardiz/status/795601240151457793"
+     ],
+     "description": "sha256crypt and sha512crypt through 0.6 allow attackers to cause a denial of service (CPU consumption) because the algorithm's runtime is proportional to the square of the length of the password.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+       "metrics": {
+        "baseScore": 5,
+        "exploitabilityScore": 10,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "glibc",
+       "version": "2.35-0ubuntu3.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-20013"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a3ffcbccc5150441",
+    "name": "libc6",
+    "version": "2.35-0ubuntu3.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libc6/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libc6:amd64.conffiles",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libc6:amd64.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GFDL-1.3",
+     "GPL-2",
+     "LGPL-2.1"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libc6:libc6:2.35-0ubuntu3.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.1?arch=amd64&upstream=glibc&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "glibc"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2016-2781",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2016-2781"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2016-2781",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2016-2781",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2016/02/28/2",
+      "http://www.openwall.com/lists/oss-security/2016/02/28/3",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "chroot in GNU coreutils, when used with --userspec, allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:L/AC:L/Au:N/C:N/I:P/A:N",
+       "metrics": {
+        "baseScore": 2.1,
+        "exploitabilityScore": 3.9,
+        "impactScore": 2.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+       "metrics": {
+        "baseScore": 6.5,
+        "exploitabilityScore": 2,
+        "impactScore": 4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "coreutils",
+       "version": "8.32-4.1ubuntu1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2016-2781"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "b54c6dfe82232d39",
+    "name": "coreutils",
+    "version": "8.32-4.1ubuntu1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/coreutils/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/coreutils.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3"
+    ],
+    "cpes": [
+     "cpe:2.3:a:coreutils:coreutils:8.32-4.1ubuntu1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/coreutils@8.32-4.1ubuntu1?arch=amd64&distro=ubuntu-22.04",
+    "upstreams": []
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2017-11164",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Negligible",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2017-11164",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2017-11164",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "http://openwall.com/lists/oss-security/2017/07/11/3",
+      "http://www.openwall.com/lists/oss-security/2023/04/11/1",
+      "http://www.openwall.com/lists/oss-security/2023/04/12/1",
+      "http://www.securityfocus.com/bid/99575",
+      "https://lists.apache.org/thread.html/rf9fa47ab66495c78bb4120b0754dd9531ca2ff0430f6685ac9b07772@%3Cdev.mina.apache.org%3E"
+     ],
+     "description": "In PCRE 8.41, the OP_KETRMAX feature in the match function in pcre_exec.c allows stack exhaustion (uncontrolled recursion) when processing a crafted regular expression.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "2.0",
+       "vector": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 10,
+        "impactScore": 6.9
+       },
+       "vendorMetadata": {}
+      },
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.0",
+       "vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "pcre3",
+       "version": "2:8.39-13ubuntu0.22.04.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2017-11164"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "08582b76a1bbd001",
+    "name": "libpcre3",
+    "version": "2:8.39-13ubuntu0.22.04.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libpcre3/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libpcre3:amd64.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [],
+    "cpes": [
+     "cpe:2.3:a:libpcre3:libpcre3:2:8.39-13ubuntu0.22.04.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libpcre3@2:8.39-13ubuntu0.22.04.1?arch=amd64&upstream=pcre3&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "pcre3"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3219",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3219"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3219",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3219",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://access.redhat.com/security/cve/CVE-2022-3219",
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2127010",
+      "https://dev.gnupg.org/D556",
+      "https://dev.gnupg.org/T5993",
+      "https://marc.info/?l=oss-security&m=165696590211434&w=4",
+      "https://security.netapp.com/advisory/ntap-20230324-0001/"
+     ],
+     "description": "GnuPG can be made to spin on a relatively small input by (for example) crafting a public key with thousands of signatures attached, compressed down to just a few KB.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "gnupg2",
+       "version": "2.2.27-3ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-3219"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "a5b49b1b64a74ead",
+    "name": "gpgv",
+    "version": "2.2.27-3ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/gpgv/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/gpgv.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "CC0-1.0",
+     "Expat",
+     "GPL-3",
+     "GPL-3+",
+     "LGPL-2.1",
+     "LGPL-2.1+",
+     "LGPL-3",
+     "LGPL-3+",
+     "RFC-Reference",
+     "TinySCHEME",
+     "permissive"
+    ],
+    "cpes": [
+     "cpe:2.3:a:gpgv:gpgv:2.2.27-3ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/gpgv@2.2.27-3ubuntu2.1?arch=amd64&upstream=gnupg2&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "gnupg2"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-3715",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3715",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-3715"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-3715",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-3715",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://bugzilla.redhat.com/show_bug.cgi?id=2126720"
+     ],
+     "description": "A flaw was found in the bash package, where a heap-buffer overflow can occur in valid parameter_transform. This issue may lead to memory problems.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+       "metrics": {
+        "baseScore": 7.8,
+        "exploitabilityScore": 1.8,
+        "impactScore": 5.9
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "bash",
+       "version": "5.1-6ubuntu1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-3715"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "d88fc74d99a91dca",
+    "name": "bash",
+    "version": "5.1-6ubuntu1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/bash/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/bash.conffiles",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/bash.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-3"
+    ],
+    "cpes": [
+     "cpe:2.3:a:bash:bash:5.1-6ubuntu1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/bash@5.1-6ubuntu1?arch=amd64&distro=ubuntu-22.04",
+    "upstreams": []
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2022-4899",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-4899",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-4899"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2022-4899",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2022-4899",
+     "namespace": "nvd:cpe",
+     "severity": "High",
+     "urls": [
+      "https://github.com/facebook/zstd/issues/3200",
+      "https://security.netapp.com/advisory/ntap-20230725-0005/"
+     ],
+     "description": "A vulnerability was found in zstd v1.4.10, where an attacker can supply empty string as an argument to the command line tool to cause buffer overrun.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+       "metrics": {
+        "baseScore": 7.5,
+        "exploitabilityScore": 3.9,
+        "impactScore": 3.6
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "libzstd",
+       "version": "1.4.8+dfsg-3build1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2022-4899"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "60c5ccc5eb041604",
+    "name": "libzstd1",
+    "version": "1.4.8+dfsg-3build1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libzstd1/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libzstd1:amd64.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "BSD-3-clause",
+     "Expat",
+     "GPL-2",
+     "zlib"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libzstd1:libzstd1:1.4.8+dfsg-3build1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libzstd1@1.4.8+dfsg-3build1?arch=amd64&upstream=libzstd&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "libzstd"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-29383",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-29383",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-29383"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-29383",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-29383",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d",
+      "https://github.com/shadow-maint/shadow/pull/687",
+      "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/",
+      "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797"
+     ],
+     "description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "shadow",
+       "version": "1:4.8.1-2ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-29383"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "653ce5bfe36eaaea",
+    "name": "login",
+    "version": "1:4.8.1-2ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/login/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/login.conffiles",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/login.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:login:login:1:4.8.1-2ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/login@1:4.8.1-2ubuntu2.1?arch=amd64&upstream=shadow&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "shadow"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-29383",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-29383",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-29383"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-29383",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-29383",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://github.com/shadow-maint/shadow/commit/e5905c4b84d4fb90aefcd96ee618411ebfac663d",
+      "https://github.com/shadow-maint/shadow/pull/687",
+      "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/cve-2023-29383-abusing-linux-chfn-to-misrepresent-etc-passwd/",
+      "https://www.trustwave.com/en-us/resources/security-resources/security-advisories/?fid=31797"
+     ],
+     "description": "In Shadow 4.13, it is possible to inject control characters into fields provided to the SUID program chfn (change finger). Although it is not possible to exploit this directly (e.g., adding a new user fails because \\n is in the block list), it is possible to misrepresent the /etc/passwd file when viewed. Use of \\r manipulations and Unicode characters to work around blocking of the : character make it possible to give the impression that a new user has been added. In other words, an adversary may be able to convince a system administrator to take the system offline (an indirect, social-engineered denial of service) by demonstrating that \"cat /etc/passwd\" shows a rogue user account.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 3.3,
+        "exploitabilityScore": 1.8,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "shadow",
+       "version": "1:4.8.1-2ubuntu2.1"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-29383"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "30902b02c858ae68",
+    "name": "passwd",
+    "version": "1:4.8.1-2ubuntu2.1",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/passwd/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/passwd.conffiles",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/passwd.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2"
+    ],
+    "cpes": [
+     "cpe:2.3:a:passwd:passwd:1:4.8.1-2ubuntu2.1:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/passwd@1:4.8.1-2ubuntu2.1?arch=amd64&upstream=shadow&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "shadow"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-2975",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-2975",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-2975"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-2975",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2975",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/07/15/1",
+      "http://www.openwall.com/lists/oss-security/2023/07/19/5",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=00e2f5eea29994d19293ec4e8c8775ba73678598",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a83f0c958811f07e0d11dfc6b5a6a98edfd5bdc",
+      "https://security.netapp.com/advisory/ntap-20230725-0004/",
+      "https://www.openssl.org/news/secadv/20230714.txt"
+     ],
+     "description": "Issue summary: The AES-SIV cipher implementation contains a bug that causes\nit to ignore empty associated data entries which are unauthenticated as\na consequence.\n\nImpact summary: Applications that use the AES-SIV algorithm and want to\nauthenticate empty data entries as associated data can be mislead by removing\nadding or reordering such empty entries as these are ignored by the OpenSSL\nimplementation. We are currently unaware of any such applications.\n\nThe AES-SIV algorithm allows for authentication of multiple associated\ndata entries along with the encryption. To authenticate empty data the\napplication has to call EVP_EncryptUpdate() (or EVP_CipherUpdate()) with\nNULL pointer as the output buffer and 0 as the input buffer length.\nThe AES-SIV implementation in OpenSSL just returns success for such a call\ninstead of performing the associated data authentication operation.\nThe empty data thus will not be authenticated.\n\nAs this issue does not affect non-empty associated data authentication and\nwe expect it to be rare for an application to use empty associated data\nentries this is qualified as Low severity issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.2-0ubuntu1.10"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-2975"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "1a4e928fac6227e8",
+    "name": "libssl3",
+    "version": "3.0.2-0ubuntu1.10",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl3/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libssl3:amd64.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0",
+     "Artistic",
+     "GPL-1",
+     "GPL-1+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libssl3:libssl3:3.0.2-0ubuntu1.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libssl3@3.0.2-0ubuntu1.10?arch=amd64&upstream=openssl&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "openssl"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-2975",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-2975",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Low",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-2975"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-2975",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-2975",
+     "namespace": "nvd:cpe",
+     "severity": "Medium",
+     "urls": [
+      "http://www.openwall.com/lists/oss-security/2023/07/15/1",
+      "http://www.openwall.com/lists/oss-security/2023/07/19/5",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=00e2f5eea29994d19293ec4e8c8775ba73678598",
+      "https://git.openssl.org/gitweb/?p=openssl.git;a=commitdiff;h=6a83f0c958811f07e0d11dfc6b5a6a98edfd5bdc",
+      "https://security.netapp.com/advisory/ntap-20230725-0004/",
+      "https://www.openssl.org/news/secadv/20230714.txt"
+     ],
+     "description": "Issue summary: The AES-SIV cipher implementation contains a bug that causes\nit to ignore empty associated data entries which are unauthenticated as\na consequence.\n\nImpact summary: Applications that use the AES-SIV algorithm and want to\nauthenticate empty data entries as associated data can be mislead by removing\nadding or reordering such empty entries as these are ignored by the OpenSSL\nimplementation. We are currently unaware of any such applications.\n\nThe AES-SIV algorithm allows for authentication of multiple associated\ndata entries along with the encryption. To authenticate empty data the\napplication has to call EVP_EncryptUpdate() (or EVP_CipherUpdate()) with\nNULL pointer as the output buffer and 0 as the input buffer length.\nThe AES-SIV implementation in OpenSSL just returns success for such a call\ninstead of performing the associated data authentication operation.\nThe empty data thus will not be authenticated.\n\nAs this issue does not affect non-empty associated data authentication and\nwe expect it to be rare for an application to use empty associated data\nentries this is qualified as Low severity issue.",
+     "cvss": [
+      {
+       "source": "nvd@nist.gov",
+       "type": "Primary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+       "metrics": {
+        "baseScore": 5.3,
+        "exploitabilityScore": 3.9,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "openssl",
+       "version": "3.0.2-0ubuntu1.10"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-2975"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "0104fa3463770d91",
+    "name": "openssl",
+    "version": "3.0.2-0ubuntu1.10",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libssl3/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/openssl.conffiles",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     },
+     {
+      "path": "/var/lib/dpkg/info/openssl.md5sums",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "Apache-2.0",
+     "Artistic",
+     "GPL-1",
+     "GPL-1+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:openssl:openssl:3.0.2-0ubuntu1.10:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/openssl@3.0.2-0ubuntu1.10?arch=amd64&distro=ubuntu-22.04",
+    "upstreams": []
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4016",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-4016",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-4016"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4016",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4016",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://gitlab.com/procps-ng/procps"
+     ],
+     "description": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+     "cvss": [
+      {
+       "source": "trellixpsirt@trellix.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 2.5,
+        "exploitabilityScore": 1,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-indirect-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "procps",
+       "version": "2:3.3.17-6ubuntu2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4016"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "3ed03bdbacefd7d5",
+    "name": "libprocps8",
+    "version": "2:3.3.17-6ubuntu2",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/libprocps8/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/libprocps8:amd64.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "GPL-2.0+",
+     "LGPL-2",
+     "LGPL-2.0+",
+     "LGPL-2.1",
+     "LGPL-2.1+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:libprocps8:libprocps8:2:3.3.17-6ubuntu2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/libprocps8@2:3.3.17-6ubuntu2?arch=amd64&upstream=procps&distro=ubuntu-22.04",
+    "upstreams": [
+     {
+      "name": "procps"
+     }
+    ]
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  },
+  {
+   "vulnerability": {
+    "id": "CVE-2023-4016",
+    "dataSource": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-4016",
+    "namespace": "ubuntu:distro:ubuntu:22.04",
+    "severity": "Medium",
+    "urls": [
+     "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2023-4016"
+    ],
+    "cvss": [],
+    "fix": {
+     "versions": [],
+     "state": "not-fixed"
+    },
+    "advisories": []
+   },
+   "relatedVulnerabilities": [
+    {
+     "id": "CVE-2023-4016",
+     "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-4016",
+     "namespace": "nvd:cpe",
+     "severity": "Low",
+     "urls": [
+      "https://gitlab.com/procps-ng/procps"
+     ],
+     "description": "Under some circumstances, this weakness allows a user who has access to run the “ps” utility on a machine, the ability to write almost unlimited amounts of unfiltered data into the process heap.",
+     "cvss": [
+      {
+       "source": "trellixpsirt@trellix.com",
+       "type": "Secondary",
+       "version": "3.1",
+       "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+       "metrics": {
+        "baseScore": 2.5,
+        "exploitabilityScore": 1,
+        "impactScore": 1.4
+       },
+       "vendorMetadata": {}
+      }
+     ]
+    }
+   ],
+   "matchDetails": [
+    {
+     "type": "exact-direct-match",
+     "matcher": "dpkg-matcher",
+     "searchedBy": {
+      "distro": {
+       "type": "ubuntu",
+       "version": "22.04"
+      },
+      "namespace": "ubuntu:distro:ubuntu:22.04",
+      "package": {
+       "name": "procps",
+       "version": "2:3.3.17-6ubuntu2"
+      }
+     },
+     "found": {
+      "versionConstraint": "none (deb)",
+      "vulnerabilityID": "CVE-2023-4016"
+     }
+    }
+   ],
+   "artifact": {
+    "id": "95e441e4005bd88a",
+    "name": "procps",
+    "version": "2:3.3.17-6ubuntu2",
+    "type": "deb",
+    "locations": [
+     {
+      "path": "/usr/share/doc/procps/copyright",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/procps.conffiles",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/info/procps.md5sums",
+      "layerID": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d"
+     },
+     {
+      "path": "/var/lib/dpkg/status",
+      "layerID": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6"
+     }
+    ],
+    "language": "",
+    "licenses": [
+     "GPL-2",
+     "GPL-2.0+",
+     "LGPL-2",
+     "LGPL-2.0+",
+     "LGPL-2.1",
+     "LGPL-2.1+"
+    ],
+    "cpes": [
+     "cpe:2.3:a:procps:procps:2:3.3.17-6ubuntu2:*:*:*:*:*:*:*"
+    ],
+    "purl": "pkg:deb/ubuntu/procps@2:3.3.17-6ubuntu2?arch=amd64&distro=ubuntu-22.04",
+    "upstreams": []
+   },
+   "appliedIgnoreRules": [
+    {
+     "fix-state": "not-fixed"
+    }
+   ]
+  }
+ ],
+ "source": {
+  "type": "image",
+  "target": {
+   "userInput": "rabbitmq:latest",
+   "imageID": "sha256:bcef1e37beb28dc3010de51562f44aad09cccdc5e51b597ad6288eebfaa7d243",
+   "manifestDigest": "sha256:4caa1c271de8ca93f80ab1ff8fc91fe2f7381db8d1b70c38e27c072524594e7d",
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "tags": [
+    "rabbitmq:latest",
+    "087495278048.dkr.ecr.eu-west-3.amazonaws.com/sm:rabbitmq_latest"
+   ],
+   "imageSize": 225509541,
+   "layers": [
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:59c56aee1fb4dbaeb334aef06088b49902105d1ea0c15a9e5a2a9ce560fa4c5d",
+     "size": 77808811
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:3333f441e0beb40295af212fddbd0b745803664681a8af3aa5d8fd355f85c611",
+     "size": 1158978
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:48ff489807d7c3b70d39d9ddd871e9861f2a0d48348647265d9779e79e0ff355",
+     "size": 40494
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:b2df897460a8ef8b55d25bd35b88d78f21e40eaf743d213deb36efc343bee9a6",
+     "size": 114316566
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:d71618bc1cb7d1bbcde589f46d0314f71e717d9521d369e8067f6a50a34d6b8f",
+     "size": 365199
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:289e56dd55a3db1a6ad68f2c6bd7c40be03ee33b7538492e1ae3e8e02b1a35e6",
+     "size": 31817463
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:81ca4832438abe4323ebbe4ae468eadd1c178032b05b2bbdd76f7af2553f1f7f",
+     "size": 23
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:293a92a792a3ecb2926cd6c1f662fcf56debcc43073215246821bf2e59272d10",
+     "size": 0
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:27f738b1044d75a7705263836c4abf6c40a505ac8332b831bb81bd3cf49856c5",
+     "size": 642
+    },
+    {
+     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+     "digest": "sha256:8f6f2877d6a479d5af5b173a6003746a63a517d9d54e78d10e14bc1494f3326b",
+     "size": 1365
+    }
+   ],
+   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo4MTgzLCJkaWdlc3QiOiJzaGEyNTY6YmNlZjFlMzdiZWIyOGRjMzAxMGRlNTE1NjJmNDRhYWQwOWNjY2RjNWU1MWI1OTdhZDYyODhlZWJmYWE3ZDI0MyJ9LCJsYXllcnMiOlt7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjo4MDMzNTg3MiwiZGlnZXN0Ijoic2hhMjU2OjU5YzU2YWVlMWZiNGRiYWViMzM0YWVmMDYwODhiNDk5MDIxMDVkMWVhMGMxNWE5ZTVhMmE5Y2U1NjBmYTRjNWQifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxMTY3ODcyLCJkaWdlc3QiOiJzaGEyNTY6MzMzM2Y0NDFlMGJlYjQwMjk1YWYyMTJmZGRiZDBiNzQ1ODAzNjY0NjgxYThhZjNhYTVkOGZkMzU1Zjg1YzYxMSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjUxNzEyLCJkaWdlc3QiOiJzaGEyNTY6NDhmZjQ4OTgwN2Q3YzNiNzBkMzlkOWRkZDg3MWU5ODYxZjJhMGQ0ODM0ODY0NzI2NWQ5Nzc5ZTc5ZTBmZjM1NSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjExNTAyNTQwOCwiZGlnZXN0Ijoic2hhMjU2OmIyZGY4OTc0NjBhOGVmOGI1NWQyNWJkMzViODhkNzhmMjFlNDBlYWY3NDNkMjEzZGViMzZlZmMzNDNiZWU5YTYifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozOTExNjgsImRpZ2VzdCI6InNoYTI1NjpkNzE2MThiYzFjYjdkMWJiY2RlNTg5ZjQ2ZDAzMTRmNzFlNzE3ZDk1MjFkMzY5ZTgwNjdmNmE1MGEzNGQ2YjhmIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MzQ3MTE1NTIsImRpZ2VzdCI6InNoYTI1NjoyODllNTZkZDU1YTNkYjFhNmFkNjhmMmM2YmQ3YzQwYmUwM2VlMzNiNzUzODQ5MmUxYWUzZThlMDJiMWEzNWU2In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MzA3MiwiZGlnZXN0Ijoic2hhMjU2OjgxY2E0ODMyNDM4YWJlNDMyM2ViYmU0YWU0NjhlYWRkMWMxNzgwMzJiMDViMmJiZGQ3NmY3YWYyNTUzZjFmN2YifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjoxNTM2LCJkaWdlc3QiOiJzaGEyNTY6MjkzYTkyYTc5MmEzZWNiMjkyNmNkNmMxZjY2MmZjZjU2ZGViY2M0MzA3MzIxNTI0NjgyMWJmMmU1OTI3MmQxMCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjQ2MDgsImRpZ2VzdCI6InNoYTI1NjoyN2Y3MzhiMTA0NGQ3NWE3NzA1MjYzODM2YzRhYmY2YzQwYTUwNWFjODMzMmI4MzFiYjgxYmQzY2Y0OTg1NmM1In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6NDYwOCwiZGlnZXN0Ijoic2hhMjU2OjhmNmYyODc3ZDZhNDc5ZDVhZjViMTczYTYwMDM3NDZhNjNhNTE3ZDlkNTRlNzhkMTBlMTRiYzE0OTRmMzMyNmIifV19",
+   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJFeHBvc2VkUG9ydHMiOnsiMTU2OTEvdGNwIjp7fSwiMTU2OTIvdGNwIjp7fSwiMjU2NzIvdGNwIjp7fSwiNDM2OS90Y3AiOnt9LCI1NjcxL3RjcCI6e30sIjU2NzIvdGNwIjp7fX0sIkVudiI6WyJQQVRIPS9vcHQvcmFiYml0bXEvc2JpbjovdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJSQUJCSVRNUV9EQVRBX0RJUj0vdmFyL2xpYi9yYWJiaXRtcSIsIlJBQkJJVE1RX1ZFUlNJT049My4xMi4yIiwiUkFCQklUTVFfUEdQX0tFWV9JRD0weDBBOUFGMjExNUY0Njg3QkQyOTgwM0EyMDZCNzNBMzZFNjAyNkRGQ0EiLCJSQUJCSVRNUV9IT01FPS9vcHQvcmFiYml0bXEiLCJIT01FPS92YXIvbGliL3JhYmJpdG1xIiwiTEFORz1DLlVURi04IiwiTEFOR1VBR0U9Qy5VVEYtOCIsIkxDX0FMTD1DLlVURi04Il0sIkVudHJ5cG9pbnQiOlsiZG9ja2VyLWVudHJ5cG9pbnQuc2giXSwiQ21kIjpbInJhYmJpdG1xLXNlcnZlciJdLCJWb2x1bWVzIjp7Ii92YXIvbGliL3JhYmJpdG1xIjp7fX0sIkxhYmVscyI6eyJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWUiOiJ1YnVudHUiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVyc2lvbiI6IjIyLjA0In0sIkFyZ3NFc2NhcGVkIjp0cnVlLCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjMtMDctMTdUMTc6Mzc6MjZaIiwiaGlzdG9yeSI6W3siY3JlYXRlZCI6IjIwMjMtMDYtMjhUMDg6Mzc6NDAuMTA3NDE2MTIxWiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgQVJHIFJFTEVBU0UiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNi0yOFQwODozNzo0MC4xNzI3ODcwNDdaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBBUkcgTEFVTkNIUEFEX0JVSUxEX0FSQ0giLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNi0yOFQwODozNzo0MC4yMzU2NDgwNjVaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApICBMQUJFTCBvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UucmVmLm5hbWU9dWJ1bnR1IiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDYtMjhUMDg6Mzc6NDAuMjkyMjAyODc4WiIsImNyZWF0ZWRfYnkiOiIvYmluL3NoIC1jICMobm9wKSAgTEFCRUwgb3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlcnNpb249MjIuMDQiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNi0yOFQwODozNzo0Mi4wNTU3NjM2MzZaIiwiY3JlYXRlZF9ieSI6Ii9iaW4vc2ggLWMgIyhub3ApIEFERCBmaWxlOjE0MGZiNTEwOGI0YTI4NjFiNTcxOGFkMDNiNGE1MTc0YmJhMDM1ODllYThkNGMwNTNlNmEwYjI4MmY0MzlmZjMgaW4gLyAifSx7ImNyZWF0ZWQiOiIyMDIzLTA2LTI4VDA4OjM3OjQyLjMxOTEwOTA2NFoiLCJjcmVhdGVkX2J5IjoiL2Jpbi9zaCAtYyAjKG5vcCkgIENNRCBbXCIvYmluL2Jhc2hcIl0iLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNy0xN1QxNzozNzoyNloiLCJjcmVhdGVkX2J5IjoiQ09QWSAvdXNyL2xvY2FsL2Jpbi8gL3Vzci9sb2NhbC9iaW4vICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDctMTdUMTc6Mzc6MjZaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL3Vzci9sb2NhbC9ldGMvc3NsLyAvdXNyL2xvY2FsL2V0Yy9zc2wvICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDctMTdUMTc6Mzc6MjZaIiwiY3JlYXRlZF9ieSI6IkNPUFkgL3Vzci9sb2NhbC9saWIvIC91c3IvbG9jYWwvbGliLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTA3LTE3VDE3OjM3OjI2WiIsImNyZWF0ZWRfYnkiOiJFTlYgUkFCQklUTVFfREFUQV9ESVI9L3Zhci9saWIvcmFiYml0bXEiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA3LTE3VDE3OjM3OjI2WiIsImNyZWF0ZWRfYnkiOiJSVU4gL2Jpbi9zaCAtYyBzZXQgLWV1eDsgXHRsbiAtdnNmIC9ldGMvc3NsL2NlcnRzIC9ldGMvc3NsL3ByaXZhdGUgL3Vzci9sb2NhbC9ldGMvc3NsOyBcdFx0bGRjb25maWc7IFx0c2VkIC1pLk9SSUcgLWUgJy9cXC5pbmNsdWRlLipmaXBzL3MvLiovLmluY2x1ZGUgXFwvdXNyXFwvbG9jYWxcXC9ldGNcXC9zc2xcXC9maXBzbW9kdWxlLmNuZi8nIFx0ICAgIC1lICcvIyBmaXBzID0vcy8uKi9maXBzID0gZmlwc19zZWN0LycgL3Vzci9sb2NhbC9ldGMvc3NsL29wZW5zc2wuY25mOyBcdHNlZCAtaS5PUklHIC1lICcvXmFjdGl2YXRlL3MvXi8jLycgL3Vzci9sb2NhbC9ldGMvc3NsL2ZpcHNtb2R1bGUuY25mOyBcdG9wZW5zc2wgdmVyc2lvbjsgXHRvcGVuc3NsIHZlcnNpb24gLWQ7IFx0XHRlcmwgLW5vc2hlbGwgLWV2YWwgJ29rID0gY3J5cHRvOnN0YXJ0KCksIG9rID0gaW86Zm9ybWF0KFwifnB+bn5ufnB+bn5uXCIsIFtjcnlwdG86c3VwcG9ydHMoKSwgc3NsOnZlcnNpb25zKCldKSwgaW5pdDpzdG9wKCkuJzsgXHRcdGdyb3VwYWRkIC0tZ2lkIDk5OSAtLXN5c3RlbSByYWJiaXRtcTsgXHR1c2VyYWRkIC0tdWlkIDk5OSAtLXN5c3RlbSAtLWhvbWUtZGlyIFwiJFJBQkJJVE1RX0RBVEFfRElSXCIgLS1naWQgcmFiYml0bXEgcmFiYml0bXE7IFx0bWtkaXIgLXAgXCIkUkFCQklUTVFfREFUQV9ESVJcIiAvZXRjL3JhYmJpdG1xIC9ldGMvcmFiYml0bXEvY29uZi5kIC90bXAvcmFiYml0bXEtc3NsIC92YXIvbG9nL3JhYmJpdG1xOyBcdGNob3duIC1mUiByYWJiaXRtcTpyYWJiaXRtcSBcIiRSQUJCSVRNUV9EQVRBX0RJUlwiIC9ldGMvcmFiYml0bXEgL2V0Yy9yYWJiaXRtcS9jb25mLmQgL3RtcC9yYWJiaXRtcS1zc2wgL3Zhci9sb2cvcmFiYml0bXE7IFx0Y2htb2QgMTc3NyBcIiRSQUJCSVRNUV9EQVRBX0RJUlwiIC9ldGMvcmFiYml0bXEgL2V0Yy9yYWJiaXRtcS9jb25mLmQgL3RtcC9yYWJiaXRtcS1zc2wgL3Zhci9sb2cvcmFiYml0bXE7IFx0bG4gLXNmIFwiJFJBQkJJVE1RX0RBVEFfRElSLy5lcmxhbmcuY29va2llXCIgL3Jvb3QvLmVybGFuZy5jb29raWUgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wNy0xN1QxNzozNzoyNloiLCJjcmVhdGVkX2J5IjoiRU5WIFJBQkJJVE1RX1ZFUlNJT049My4xMi4yIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNy0xN1QxNzozNzoyNloiLCJjcmVhdGVkX2J5IjoiRU5WIFJBQkJJVE1RX1BHUF9LRVlfSUQ9MHgwQTlBRjIxMTVGNDY4N0JEMjk4MDNBMjA2QjczQTM2RTYwMjZERkNBIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNy0xN1QxNzozNzoyNloiLCJjcmVhdGVkX2J5IjoiRU5WIFJBQkJJVE1RX0hPTUU9L29wdC9yYWJiaXRtcSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDctMTdUMTc6Mzc6MjZaIiwiY3JlYXRlZF9ieSI6IkVOViBQQVRIPS9vcHQvcmFiYml0bXEvc2JpbjovdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA3LTE3VDE3OjM3OjI2WiIsImNyZWF0ZWRfYnkiOiJSVU4gL2Jpbi9zaCAtYyBzZXQgLWV1eDsgXHRleHBvcnQgREVCSUFOX0ZST05URU5EPW5vbmludGVyYWN0aXZlOyBcdGFwdC1nZXQgdXBkYXRlOyBcdGFwdC1nZXQgaW5zdGFsbCAtLXllcyAtLW5vLWluc3RhbGwtcmVjb21tZW5kcyBcdFx0Y2EtY2VydGlmaWNhdGVzIFx0XHRnb3N1IFx0XHR0emRhdGEgXHQ7IFx0Z29zdSBub2JvZHkgdHJ1ZTsgXHRcdHNhdmVkQXB0TWFyaz1cIiQoYXB0LW1hcmsgc2hvd21hbnVhbClcIjsgXHRhcHQtZ2V0IGluc3RhbGwgLS15ZXMgLS1uby1pbnN0YWxsLXJlY29tbWVuZHMgXHRcdGdudXBnIFx0XHR3Z2V0IFx0XHR4ei11dGlscyBcdDsgXHRybSAtcmYgL3Zhci9saWIvYXB0L2xpc3RzLyo7IFx0XHRSQUJCSVRNUV9TT1VSQ0VfVVJMPVwiaHR0cHM6Ly9naXRodWIuY29tL3JhYmJpdG1xL3JhYmJpdG1xLXNlcnZlci9yZWxlYXNlcy9kb3dubG9hZC92JFJBQkJJVE1RX1ZFUlNJT04vcmFiYml0bXEtc2VydmVyLWdlbmVyaWMtdW5peC1sYXRlc3QtdG9vbGNoYWluLSRSQUJCSVRNUV9WRVJTSU9OLnRhci54elwiOyBcdFJBQkJJVE1RX1BBVEg9XCIvdXNyL2xvY2FsL3NyYy9yYWJiaXRtcS0kUkFCQklUTVFfVkVSU0lPTlwiOyBcdFx0d2dldCAtLXByb2dyZXNzIGRvdDpnaWdhIC0tb3V0cHV0LWRvY3VtZW50IFwiJFJBQkJJVE1RX1BBVEgudGFyLnh6LmFzY1wiIFwiJFJBQkJJVE1RX1NPVVJDRV9VUkwuYXNjXCI7IFx0d2dldCAtLXByb2dyZXNzIGRvdDpnaWdhIC0tb3V0cHV0LWRvY3VtZW50IFwiJFJBQkJJVE1RX1BBVEgudGFyLnh6XCIgXCIkUkFCQklUTVFfU09VUkNFX1VSTFwiOyBcdFx0ZXhwb3J0IEdOVVBHSE9NRT1cIiQobWt0ZW1wIC1kKVwiOyBcdGdwZyAtLWJhdGNoIC0ta2V5c2VydmVyIGhrcHM6Ly9rZXlzLm9wZW5wZ3Aub3JnIC0tcmVjdi1rZXlzIFwiJFJBQkJJVE1RX1BHUF9LRVlfSURcIjsgXHRncGcgLS1iYXRjaCAtLXZlcmlmeSBcIiRSQUJCSVRNUV9QQVRILnRhci54ei5hc2NcIiBcIiRSQUJCSVRNUV9QQVRILnRhci54elwiOyBcdGdwZ2NvbmYgLS1raWxsIGFsbDsgXHRybSAtcmYgXCIkR05VUEdIT01FXCI7IFx0XHRta2RpciAtcCBcIiRSQUJCSVRNUV9IT01FXCI7IFx0dGFyIC0tZXh0cmFjdCAtLWZpbGUgXCIkUkFCQklUTVFfUEFUSC50YXIueHpcIiAtLWRpcmVjdG9yeSBcIiRSQUJCSVRNUV9IT01FXCIgLS1zdHJpcC1jb21wb25lbnRzIDE7IFx0cm0gLXJmIFwiJFJBQkJJVE1RX1BBVEhcIio7IFx0Z3JlcCAtcUUgJ15TWVNfUFJFRklYPVxcJFxce1JBQkJJVE1RX0hPTUVcXH0kJyBcIiRSQUJCSVRNUV9IT01FL3NiaW4vcmFiYml0bXEtZGVmYXVsdHNcIjsgXHRzZWQgLWkgJ3MvXlNZU19QUkVGSVg9LiokL1NZU19QUkVGSVg9LycgXCIkUkFCQklUTVFfSE9NRS9zYmluL3JhYmJpdG1xLWRlZmF1bHRzXCI7IFx0Z3JlcCAtcUUgJ15TWVNfUFJFRklYPSQnIFwiJFJBQkJJVE1RX0hPTUUvc2Jpbi9yYWJiaXRtcS1kZWZhdWx0c1wiOyBcdGNob3duIC1SIHJhYmJpdG1xOnJhYmJpdG1xIFwiJFJBQkJJVE1RX0hPTUVcIjsgXHRcdGFwdC1tYXJrIGF1dG8gJy4qJyBcdTAwM2UgL2Rldi9udWxsOyBcdGFwdC1tYXJrIG1hbnVhbCAkc2F2ZWRBcHRNYXJrOyBcdGFwdC1nZXQgcHVyZ2UgLXkgLS1hdXRvLXJlbW92ZSAtbyBBUFQ6OkF1dG9SZW1vdmU6OlJlY29tbWVuZHNJbXBvcnRhbnQ9ZmFsc2U7IFx0XHRbICEgLWUgXCIkUkFCQklUTVFfREFUQV9ESVIvLmVybGFuZy5jb29raWVcIiBdOyBcdGdvc3UgcmFiYml0bXEgcmFiYml0bXFjdGwgaGVscDsgXHRnb3N1IHJhYmJpdG1xIHJhYmJpdG1xY3RsIGxpc3RfY2lwaGVyczsgXHRnb3N1IHJhYmJpdG1xIHJhYmJpdG1xLXBsdWdpbnMgbGlzdDsgXHRybSBcIiRSQUJCSVRNUV9EQVRBX0RJUi8uZXJsYW5nLmNvb2tpZVwiICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjMtMDctMTdUMTc6Mzc6MjZaIiwiY3JlYXRlZF9ieSI6IlJVTiAvYmluL3NoIC1jIGdvc3UgcmFiYml0bXEgcmFiYml0bXEtcGx1Z2lucyBlbmFibGUgLS1vZmZsaW5lIHJhYmJpdG1xX3Byb21ldGhldXMgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMy0wNy0xN1QxNzozNzoyNloiLCJjcmVhdGVkX2J5IjoiUlVOIC9iaW4vc2ggLWMgbG4gLXNmIC9vcHQvcmFiYml0bXEvcGx1Z2lucyAvcGx1Z2lucyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTA3LTE3VDE3OjM3OjI2WiIsImNyZWF0ZWRfYnkiOiJFTlYgSE9NRT0vdmFyL2xpYi9yYWJiaXRtcSIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIiwiZW1wdHlfbGF5ZXIiOnRydWV9LHsiY3JlYXRlZCI6IjIwMjMtMDctMTdUMTc6Mzc6MjZaIiwiY3JlYXRlZF9ieSI6IlZPTFVNRSBbL3Zhci9saWIvcmFiYml0bXFdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNy0xN1QxNzozNzoyNloiLCJjcmVhdGVkX2J5IjoiRU5WIExBTkc9Qy5VVEYtOCBMQU5HVUFHRT1DLlVURi04IExDX0FMTD1DLlVURi04IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNy0xN1QxNzozNzoyNloiLCJjcmVhdGVkX2J5IjoiQ09QWSAxMC1kZWZhdWx0cy5jb25mIDIwLW1hbmFnZW1lbnRfYWdlbnQuZGlzYWJsZV9tZXRyaWNzX2NvbGxlY3Rvci5jb25mIC9ldGMvcmFiYml0bXEvY29uZi5kLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTA3LTE3VDE3OjM3OjI2WiIsImNyZWF0ZWRfYnkiOiJDT1BZIGRvY2tlci1lbnRyeXBvaW50LnNoIC91c3IvbG9jYWwvYmluLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifSx7ImNyZWF0ZWQiOiIyMDIzLTA3LTE3VDE3OjM3OjI2WiIsImNyZWF0ZWRfYnkiOiJFTlRSWVBPSU5UIFtcImRvY2tlci1lbnRyeXBvaW50LnNoXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX0seyJjcmVhdGVkIjoiMjAyMy0wNy0xN1QxNzozNzoyNloiLCJjcmVhdGVkX2J5IjoiRVhQT1NFIG1hcFsxNTY5MS90Y3A6e30gMTU2OTIvdGNwOnt9IDI1NjcyL3RjcDp7fSA0MzY5L3RjcDp7fSA1NjcxL3RjcDp7fSA1NjcyL3RjcDp7fV0iLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCIsImVtcHR5X2xheWVyIjp0cnVlfSx7ImNyZWF0ZWQiOiIyMDIzLTA3LTE3VDE3OjM3OjI2WiIsImNyZWF0ZWRfYnkiOiJDTUQgW1wicmFiYml0bXEtc2VydmVyXCJdIiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAiLCJlbXB0eV9sYXllciI6dHJ1ZX1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NTljNTZhZWUxZmI0ZGJhZWIzMzRhZWYwNjA4OGI0OTkwMjEwNWQxZWEwYzE1YTllNWEyYTljZTU2MGZhNGM1ZCIsInNoYTI1NjozMzMzZjQ0MWUwYmViNDAyOTVhZjIxMmZkZGJkMGI3NDU4MDM2NjQ2ODFhOGFmM2FhNWQ4ZmQzNTVmODVjNjExIiwic2hhMjU2OjQ4ZmY0ODk4MDdkN2MzYjcwZDM5ZDlkZGQ4NzFlOTg2MWYyYTBkNDgzNDg2NDcyNjVkOTc3OWU3OWUwZmYzNTUiLCJzaGEyNTY6YjJkZjg5NzQ2MGE4ZWY4YjU1ZDI1YmQzNWI4OGQ3OGYyMWU0MGVhZjc0M2QyMTNkZWIzNmVmYzM0M2JlZTlhNiIsInNoYTI1NjpkNzE2MThiYzFjYjdkMWJiY2RlNTg5ZjQ2ZDAzMTRmNzFlNzE3ZDk1MjFkMzY5ZTgwNjdmNmE1MGEzNGQ2YjhmIiwic2hhMjU2OjI4OWU1NmRkNTVhM2RiMWE2YWQ2OGYyYzZiZDdjNDBiZTAzZWUzM2I3NTM4NDkyZTFhZTNlOGUwMmIxYTM1ZTYiLCJzaGEyNTY6ODFjYTQ4MzI0MzhhYmU0MzIzZWJiZTRhZTQ2OGVhZGQxYzE3ODAzMmIwNWIyYmJkZDc2ZjdhZjI1NTNmMWY3ZiIsInNoYTI1NjoyOTNhOTJhNzkyYTNlY2IyOTI2Y2Q2YzFmNjYyZmNmNTZkZWJjYzQzMDczMjE1MjQ2ODIxYmYyZTU5MjcyZDEwIiwic2hhMjU2OjI3ZjczOGIxMDQ0ZDc1YTc3MDUyNjM4MzZjNGFiZjZjNDBhNTA1YWM4MzMyYjgzMWJiODFiZDNjZjQ5ODU2YzUiLCJzaGEyNTY6OGY2ZjI4NzdkNmE0NzlkNWFmNWIxNzNhNjAwMzc0NmE2M2E1MTdkOWQ1NGU3OGQxMGUxNGJjMTQ5NGYzMzI2YiJdfX0=",
+   "repoDigests": [
+    "087495278048.dkr.ecr.eu-west-3.amazonaws.com/sm@sha256:00cd3e038c48de9e3da2012d89590afd9048c1df0177f48133316f306966bda2",
+    "rabbitmq@sha256:1b6d357425811173eb97104b0593eebf981167d25c6bb67512c8fccddebc0727"
+   ],
+   "architecture": "amd64",
+   "os": "linux"
+  }
+ },
+ "distro": {
+  "name": "ubuntu",
+  "version": "22.04",
+  "idLike": [
+   "debian"
+  ]
+ },
+ "descriptor": {
+  "name": "grype",
+  "version": "0.64.2",
+  "configuration": {
+   "configPath": "/home/shane/.grype.yaml",
+   "verbosity": 0,
+   "output": [
+    "json"
+   ],
+   "file": "",
+   "distro": "",
+   "add-cpes-if-none": false,
+   "output-template-file": "",
+   "quiet": false,
+   "check-for-app-update": true,
+   "only-fixed": true,
+   "only-notfixed": false,
+   "platform": "",
+   "search": {
+    "scope": "Squashed",
+    "unindexed-archives": false,
+    "indexed-archives": true
+   },
+   "ignore": [
+    {
+     "vulnerability": "",
+     "namespace": "",
+     "fix-state": "wont-fix",
+     "package": {
+      "name": "",
+      "version": "",
+      "language": "",
+      "type": "",
+      "location": ""
+     }
+    },
+    {
+     "vulnerability": "",
+     "namespace": "",
+     "fix-state": "not-fixed",
+     "package": {
+      "name": "",
+      "version": "",
+      "language": "",
+      "type": "",
+      "location": ""
+     }
+    },
+    {
+     "vulnerability": "",
+     "namespace": "",
+     "fix-state": "wont-fix",
+     "package": {
+      "name": "",
+      "version": "",
+      "language": "",
+      "type": "",
+      "location": ""
+     }
+    },
+    {
+     "vulnerability": "",
+     "namespace": "",
+     "fix-state": "unknown",
+     "package": {
+      "name": "",
+      "version": "",
+      "language": "",
+      "type": "",
+      "location": ""
+     }
+    }
+   ],
+   "exclude": [],
+   "db": {
+    "cache-dir": "/home/shane/.cache/grype/db",
+    "update-url": "https://toolbox-data.anchore.io/grype/databases/listing.json",
+    "ca-cert": "",
+    "auto-update": true,
+    "validate-by-hash-on-start": false,
+    "validate-age": true,
+    "max-allowed-built-age": 432000000000000
+   },
+   "externalSources": {
+    "enable": false,
+    "maven": {
+     "searchUpstreamBySha1": true,
+     "baseUrl": "https://search.maven.org/solrsearch/select"
+    }
+   },
+   "match": {
+    "java": {
+     "using-cpes": true
+    },
+    "dotnet": {
+     "using-cpes": true
+    },
+    "golang": {
+     "using-cpes": true
+    },
+    "javascript": {
+     "using-cpes": false
+    },
+    "python": {
+     "using-cpes": true
+    },
+    "ruby": {
+     "using-cpes": true
+    },
+    "stock": {
+     "using-cpes": true
+    }
+   },
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "fail-on-severity": "",
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "log": {
+    "structured": false,
+    "level": "warn",
+    "file": ""
+   },
+   "show-suppressed": false,
+   "by-cve": false,
+   "name": "",
+   "default-image-pull-source": ""
+  },
+  "db": {
+   "built": "2023-08-04T01:33:27Z",
+   "schemaVersion": 5,
+   "location": "/home/shane/.cache/grype/db/5",
+   "checksum": "sha256:c46ed132f89a2b90d6fba9f70b78988062966ca1f353f5e3d43975c4505f79f9",
+   "error": null
+  },
+  "timestamp": "2023-08-04T20:34:13.283725674+01:00"
+ }
+}
